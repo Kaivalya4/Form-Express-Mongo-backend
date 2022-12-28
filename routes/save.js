@@ -2,6 +2,10 @@ const express = require("express");
 const router = express.Router();
 const User = require("../userSchema");
 
+router.get("/demo", (req, res) => {
+    res.json("hello world");
+});
+
 router.post("/save", (req, res) => {
     console.log(req.body);
     const {
